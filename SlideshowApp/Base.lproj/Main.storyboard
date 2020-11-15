@@ -98,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izh-Eb-lkJ">
-                                <rect key="frame" x="157" y="478" width="100" height="30"/>
+                                <rect key="frame" x="157" y="500" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="72h-rD-mK1"/>
                                     <constraint firstAttribute="height" constant="30" id="BhP-hF-VCT"/>
@@ -119,9 +119,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="izh-Eb-lkJ" firstAttribute="centerX" secondItem="Xng-9M-kc3" secondAttribute="centerX" id="5SH-uL-32a"/>
-                            <constraint firstItem="knw-2X-0XZ" firstAttribute="bottom" secondItem="izh-Eb-lkJ" secondAttribute="bottom" constant="300" id="DOV-4c-WZ1"/>
                             <constraint firstItem="yy6-lj-ByD" firstAttribute="top" secondItem="knw-2X-0XZ" secondAttribute="top" constant="150" id="djx-Yk-9Dt"/>
                             <constraint firstItem="yy6-lj-ByD" firstAttribute="centerX" secondItem="Xng-9M-kc3" secondAttribute="centerX" id="iKS-b5-A4U"/>
+                            <constraint firstItem="izh-Eb-lkJ" firstAttribute="top" secondItem="knw-2X-0XZ" secondAttribute="top" constant="500" id="yBm-fQ-gLW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="knw-2X-0XZ"/>
                     </view>

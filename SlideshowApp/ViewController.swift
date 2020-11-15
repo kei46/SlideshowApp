@@ -95,9 +95,8 @@ class ViewController: UIViewController {
         
         
         
-        
-        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
@@ -110,12 +109,44 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        
+        
         let resultViewController:RsultViewController = segue.destination as! RsultViewController
         
         resultViewController.imagenumber = imagenumber
-       
+        
+        if timer != nil {
+            
+            if self.timer == nil {
+                self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+                
+                playbottan.setTitle("停止", for: .normal)
+                
+                movebottan.isEnabled = false
+                
+                backbottan.isEnabled = false
+                
+                
+                
+            } else {
+                self.timer.invalidate()
+                self.timer = nil
+                playbottan.setTitle("再生", for: .normal)
+                
+                movebottan.isEnabled = true
+                
+                backbottan.isEnabled = true
+            }
+        }
+        // 停止ボタンと同じ処理
         
     }
     
+    
+    
+    
+    
 }
+
+
 
